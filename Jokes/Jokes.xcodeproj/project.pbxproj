@@ -21,6 +21,7 @@
 		6456BA5A26A4A6680053A490 /* RJActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456BA5926A4A6680053A490 /* RJActivity.swift */; };
 		6456BA5F26A4A6990053A490 /* RJLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456BA5E26A4A6990053A490 /* RJLayoutHelper.swift */; };
 		6456BA6426A4A6CC0053A490 /* RJExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456BA6326A4A6CC0053A490 /* RJExtensions.swift */; };
+		6456BA6926A4A7560053A490 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456BA6826A4A7560053A490 /* NetworkReachabilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		6456BA5926A4A6680053A490 /* RJActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJActivity.swift; sourceTree = "<group>"; };
 		6456BA5E26A4A6990053A490 /* RJLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJLayoutHelper.swift; sourceTree = "<group>"; };
 		6456BA6326A4A6CC0053A490 /* RJExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJExtensions.swift; sourceTree = "<group>"; };
+		6456BA6826A4A7560053A490 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				6456BA0626A48B600053A490 /* AppDelegate.swift */,
 				6456BA0826A48B600053A490 /* SceneDelegate.swift */,
+				6456BA6826A4A7560053A490 /* NetworkReachabilityManager.swift */,
 				6456BA5926A4A6680053A490 /* RJActivity.swift */,
 				6456BA5E26A4A6990053A490 /* RJLayoutHelper.swift */,
 				6456BA6326A4A6CC0053A490 /* RJExtensions.swift */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6456BA6926A4A7560053A490 /* NetworkReachabilityManager.swift in Sources */,
 				6456BA3D26A4945D0053A490 /* JokesButton.swift in Sources */,
 				6456BA5F26A4A6990053A490 /* RJLayoutHelper.swift in Sources */,
 				6456BA0726A48B600053A490 /* AppDelegate.swift in Sources */,
