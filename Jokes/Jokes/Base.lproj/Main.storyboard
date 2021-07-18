@@ -12,7 +12,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Jokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,9 @@
                                         <color key="value" systemColor="systemOrangeColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rbQ-hc-tyJ" kind="show" identifier="randomJokes" id="MGB-A5-dM8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhh-kB-KF3" customClass="JokesButton" customModule="Jokes" customModuleProvider="target">
                                 <rect key="frame" x="15" y="203" width="384" height="55"/>
@@ -54,6 +57,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rbQ-hc-tyJ" kind="show" identifier="searchJokes" id="Z71-hg-Sja"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX3-Kc-xwE" customClass="JokesButton" customModule="Jokes" customModuleProvider="target">
                                 <rect key="frame" x="15" y="288" width="384" height="55"/>
@@ -73,6 +79,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rbQ-hc-tyJ" kind="show" identifier="unlimitedJokes" id="ani-ZT-bbo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,6 +103,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="93.75"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="F7f-00-25c">
+            <objects>
+                <viewController id="rbQ-hc-tyJ" customClass="DetailViewController" customModule="Jokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPl-dd-QjX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kkb-LF-aKn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xm2-rw-wKN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zi8-sV-1IT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MQv-Qm-ecT">
@@ -125,6 +150,9 @@
             <size key="intrinsicContentSize" width="108" height="34"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="ani-ZT-bbo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="ThemeColor">
             <color red="1" green="0.43500000238418579" blue="0.32300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
